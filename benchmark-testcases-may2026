@@ -1,0 +1,400 @@
+test_cases:
+  - key: 1
+    question: "How many regular-season games are in the schedules table for the 2016 season?"
+    answer: "Return a single count for 2016 regular-season scheduled games."
+
+  - key: 2
+    question: "Which ten venues hosted the most regular-season games in 2016?"
+    answer: "Return venue names with distinct regular-season game counts, ordered descending."
+
+  - key: 3
+    question: "What was the average attendance by venue market during the 2016 regular season, excluding missing or zero attendance?"
+    answer: "Return venue markets and average attendance, excluding NULL and non-positive attendance."
+
+  - key: 4
+    question: "Which teams hit the most home runs in the 2016 regular season?"
+    answer: "Return teams with home run counts from regular-season event data."
+
+  - key: 5
+    question: "Who were the top 10 regular-season hitters by total hits?"
+    answer: "Return hitter names or IDs with total hits, ordered descending."
+
+  - key: 6
+    question: "Who were the top 10 regular-season pitchers by strikeouts?"
+    answer: "Return pitcher names or IDs with strikeout counts, ordered descending."
+
+  - key: 7
+    question: "Which 2016 regular-season teams had the best run differential?"
+    answer: "Return teams with runs scored, runs allowed, and run differential."
+
+  - key: 8
+    question: "What was the win-loss record for each team in the 2016 regular season?"
+    answer: "Return team names with wins and losses from game-level final scores."
+
+  - key: 9
+    question: "What was the average number of runs scored per team per regular-season game in 2016?"
+    answer: "Return one scalar average for runs scored per team per regular-season game. This should be based on game-level final scores, equivalent to total runs scored by both teams divided by total team-games."
+
+  - key: 10
+    question: "Which players had the highest OPS in the 2016 regular season with at least 300 plate appearances?"
+    answer: "Return player names or IDs with OBP, SLG, and OPS, ordered by OPS descending."
+
+  - key: 11
+    question: "Which regular-season pitchers had the lowest runs allowed per 9 innings among pitchers with at least 100 innings pitched?"
+    answer: "Return pitcher names or IDs with innings, runs allowed, and RA9."
+
+  - key: 12
+    question: "Which players stole the most bases in the 2016 regular season?"
+    answer: "Return player names or IDs with stolen base counts from runner outcome fields."
+
+  - key: 13
+    question: "How many regular-season games went into extra innings?"
+    answer: "Return a count of distinct regular-season games with innings beyond the ninth."
+
+  - key: 14
+    question: "Which team won the final postseason game in the dataset?"
+    answer: "Return the team that won the latest postseason game based on final runs."
+
+  - key: 15
+    question: "What were the final scores for all postseason games, ordered by start time?"
+    answer: "Return postseason games with start time, teams, and final runs."
+
+  - key: 16
+    question: "Which regular-season games had the highest combined final score?"
+    answer: "Return games with teams, final runs, and combined runs, ordered descending."
+
+  - key: 17
+    question: "What was the average pitch speed by pitch type in regular-season games, excluding invalid zero speeds?"
+    answer: "Return pitch types with average speed after filtering invalid speeds."
+
+  - key: 18
+    question: "Which hitters grounded into the most double plays during the regular season?"
+    answer: "Return hitter names or IDs with double-play counts, ordered descending."
+
+  - key: 19
+    question: "Which regular-season venues had the highest average attendance as a percentage of venue capacity?"
+    answer: "Return venues with average attendance, capacity, and percent filled, excluding invalid attendance or capacity."
+
+  - key: 20
+    question: "How many regular-season plate appearances ended in a walk, intentional walk, hit by pitch, strikeout, or sacrifice fly?"
+    answer: "Return counts for each requested plate-appearance-ending outcome category."
+
+  - key: 21
+    question: "Which regular-season teams had the most wins at home in 2016?"
+    answer: "Return home team names with home wins, ordered descending."
+
+  - key: 22
+    question: "Which regular-season teams had the most wins on the road in 2016?"
+    answer: "Return away team names with road wins, ordered descending."
+
+  - key: 23
+    question: "Which regular-season teams scored the most runs at home in 2016?"
+    answer: "Return home teams with total runs scored while playing as the home team, using game-level final scores, ordered from most to fewest runs scored."
+
+  - key: 24
+    question: "Which regular-season teams scored the most runs as the away team in 2016?"
+    answer: "Return away teams with total away runs scored from game-level final scores."
+
+  - key: 25
+    question: "Which regular-season teams allowed the fewest total runs in 2016?"
+    answer: "Return teams with total runs allowed from home and away roles, ordered ascending."
+
+  - key: 26
+    question: "Which regular-season teams had the highest average runs scored per game in 2016?"
+    answer: "Return teams with games played and average runs scored per game."
+
+  - key: 27
+    question: "Which regular-season teams had the lowest average runs allowed per game in 2016?"
+    answer: "Return teams with average runs allowed per game in the regular season, ordered from lowest to highest. Games played and total runs allowed are acceptable supporting columns but are not required."
+
+  - key: 28
+    question: "Which regular-season games had the largest margin of victory?"
+    answer: "Return the regular-season game or games with the largest absolute final-score margin. Include teams, final scores, and the run margin. Ties should be included if present."
+
+  - key: 29
+    question: "How many regular-season games were decided by exactly one run?"
+    answer: "Return one count of distinct games where the final run difference equals one."
+
+  - key: 30
+    question: "How many regular-season games were shutouts?"
+    answer: "Return one count of distinct games where either team finished with zero runs and the other team won."
+
+  - key: 31
+    question: "Which teams recorded the most shutout wins in the 2016 regular season?"
+    answer: "Return teams with shutout win counts, ordered descending."
+
+  - key: 32
+    question: "Which teams were shut out most often in the 2016 regular season?"
+    answer: "Return teams with shutout loss counts, ordered descending."
+
+  - key: 33
+    question: "What was the distribution of regular-season games by dayNight code?"
+    answer: "Return dayNight values with distinct game counts."
+
+  - key: 34
+    question: "What was the average regular-season game duration in minutes by dayNight code?"
+    answer: "Return dayNight values with average duration minutes using game-level rows."
+
+  - key: 35
+    question: "Which regular-season venues had the longest average game duration?"
+    answer: "Return venue names with average duration minutes, ordered descending."
+
+  - key: 36
+    question: "Which regular-season venues had the shortest average game duration?"
+    answer: "Return venue names with average duration minutes, ordered ascending."
+
+  - key: 37
+    question: "Which regular-season games had the longest duration in minutes?"
+    answer: "Accept the regular-season game or games tied for the maximum duration_minutes. The result should include enough game identity such as gameId, date/startTime, and teams, plus duration_minutes. Venue is optional. Returning only the top tied game(s), rather than every game ordered descending, is acceptable."
+
+  - key: 38
+    question: "Which regular-season games had the highest attendance?"
+    answer: "Accept the regular-season game or games tied for maximum attendance. The result should include teams and attendance, with useful game identity such as gameId, date, or startTime. Venue is optional. Returning only the top tied game(s), rather than every game ordered descending, is acceptable."
+
+  - key: 39
+    question: "Which regular-season games had the lowest positive attendance?"
+    answer: "Accept the regular-season game or games tied for the lowest attendance greater than zero. The result should include teams and attendance, with useful game identity such as gameId, date, or startTime. Venue is optional. Returning only the minimum tied game(s), rather than every positive-attendance game ordered ascending, is acceptable."
+
+  - key: 40
+    question: "What was the total regular-season attendance by venue?"
+    answer: "Return venue names with total attendance from distinct games, ordered descending."
+
+  - key: 41
+    question: "Which venue states had the highest average regular-season attendance?"
+    answer: "Return venue states with average attendance, excluding missing or non-positive attendance."
+
+  - key: 42
+    question: "How many regular-season games were played in each venue state?"
+    answer: "Return venue states with distinct game counts."
+
+  - key: 43
+    question: "Which venues used grass versus turf, and how many regular-season games were played on each surface?"
+    answer: "Accept either a surface-level aggregate with venueSurface and distinct regular-season game counts, or a venue-level breakdown showing each venue, its venueSurface, and regular-season game counts. If returning venue-level rows, repeated or separate surface totals are acceptable."
+
+  - key: 44
+    question: "What was the average attendance by venueSurface during the regular season?"
+    answer: "Return venueSurface values with average attendance, excluding invalid attendance."
+
+  - key: 45
+    question: "Which teams hit the most doubles in the 2016 regular season?"
+    answer: "Return batting teams with double counts based on outcomeId double codes."
+
+  - key: 46
+    question: "Which teams hit the most triples in the 2016 regular season?"
+    answer: "Return batting teams with triple counts based on outcomeId triple codes."
+
+  - key: 47
+    question: "Which hitters hit the most home runs during the 2016 regular season?"
+    answer: "Return hitter names or IDs with home run counts, ordered descending."
+
+  - key: 48
+    question: "Which hitters hit the most doubles during the 2016 regular season?"
+    answer: "Return hitter names or IDs with double counts, ordered descending."
+
+  - key: 49
+    question: "Which hitters hit the most triples during the 2016 regular season?"
+    answer: "Return hitter names or IDs with triple counts, ordered descending."
+
+  - key: 50
+    question: "Which hitters had the highest batting average with at least 300 official at-bats?"
+    answer: "Return hitter names or IDs with hits, at-bats, and batting average."
+
+  - key: 51
+    question: "Which hitters had the highest on-base percentage with at least 300 plate appearances?"
+    answer: "Return hitter names or IDs with OBP inputs and OBP, ordered descending."
+
+  - key: 52
+    question: "Which hitters had the highest slugging percentage with at least 300 official at-bats?"
+    answer: "Return hitter names or IDs with total bases, at-bats, and slugging percentage."
+
+  - key: 53
+    question: "Which hitters had the most official at-bats in the regular season?"
+    answer: "Return hitter names or IDs with SUM(is_ab), ordered descending."
+
+  - key: 54
+    question: "Which hitters had the most plate appearances ending in a walk during the regular season?"
+    answer: "Return hitter names or IDs with walk counts using plate-appearance-ending walk outcomes."
+
+  - key: 55
+    question: "Which hitters were hit by pitch the most during the regular season?"
+    answer: "Return hitter names or IDs with hit-by-pitch counts, ordered descending."
+
+  - key: 56
+    question: "Which hitters recorded the most sacrifice flies during the regular season?"
+    answer: "Return hitter names or IDs with sacrifice fly counts, ordered descending."
+
+  - key: 57
+    question: "Which pitchers allowed the most home runs during the regular season?"
+    answer: "Return pitcher names or IDs with home runs allowed, ordered descending."
+
+  - key: 58
+    question: "Which pitchers issued the most walks during the regular season?"
+    answer: "Return pitcher names or IDs with plate-appearance-ending walk counts."
+
+  - key: 59
+    question: "Which pitchers hit the most batters during the regular season?"
+    answer: "Return pitcher names or IDs with hit-by-pitch counts, ordered descending."
+
+  - key: 60
+    question: "Which pitchers threw the most pitches in the regular-season event data?"
+    answer: "Return pitcher names or IDs with pitch event counts, ordered descending."
+
+  - key: 61
+    question: "Which pitchers had the highest average pitch speed with at least 500 valid pitches?"
+    answer: "Return pitcher names or IDs with valid pitch counts and average pitch speed."
+
+  - key: 62
+    question: "Which pitchers had the lowest average pitch speed with at least 500 valid pitches?"
+    answer: "Return pitcher names or IDs with valid pitch counts and average pitch speed."
+
+  - key: 63
+    question: "What were the most common pitch types in the regular-season data?"
+    answer: "Return pitch types with counts, excluding empty or missing pitch types."
+
+  - key: 64
+    question: "Which pitch types had the highest average speed in the regular-season data?"
+    answer: "Return pitch types with valid pitch counts and average speed, ordered descending."
+
+  - key: 65
+    question: "How many regular-season pitch events were called strikes, swinging strikes, fouls, balls, and intentional balls?"
+    answer: "Return counts grouped into the requested pitch outcome categories."
+
+  - key: 66
+    question: "Which regular-season hitters saw the most pitches per plate appearance among hitters with at least 300 plate appearances?"
+    answer: "Return hitter names or IDs with pitch counts, plate appearances, and pitches per plate appearance."
+
+  - key: 67
+    question: "Which regular-season pitchers averaged the most pitches per plate appearance faced among pitchers with at least 300 plate appearances faced?"
+    answer: "Return pitcher names or IDs with pitch counts, plate appearances faced, and pitches per plate appearance."
+
+  - key: 68
+    question: "Which batting teams had the most stolen bases during the 2016 regular season?"
+    answer: "Return teams with stolen base counts from runner outcome fields."
+
+  - key: 69
+    question: "Which teams were caught stealing most often during the 2016 regular season?"
+    answer: "Return teams with caught-stealing counts from runner outcome fields."
+
+  - key: 70
+    question: "Which players were caught stealing most often during the regular season?"
+    answer: "Return player names or IDs with caught-stealing counts, ordered descending."
+
+  - key: 71
+    question: "How many regular-season steal events involved a runner stealing home?"
+    answer: "Return one count of steal events where a runner outcome indicates stealing home."
+
+  - key: 72
+    question: "How many regular-season runs scored from each base runner slot rob0, rob1, rob2, and rob3?"
+    answer: "Return separate scored counts based on rob0_end through rob3_end equaling home."
+
+  - key: 73
+    question: "Which hitters bunted most often during the regular season?"
+    answer: "Return hitter names or IDs with bunt attempt counts, ordered descending."
+
+  - key: 74
+    question: "Which teams attempted the most bunts during the regular season?"
+    answer: "Return batting teams with bunt attempt counts, ordered descending."
+
+  - key: 75
+    question: "Which regular-season teams turned the most double plays while fielding?"
+    answer: "Return fielding teams with double-play counts, ordered descending."
+
+  - key: 76
+    question: "How many triple plays occurred during the regular season?"
+    answer: "Return one count of regular-season events where is_triple_play is set."
+
+  - key: 77
+    question: "Which regular-season games had the most double plays?"
+    answer: "Return the regular-season game or games with the highest double-play count. Include teams, a game identifier or date/start time, and the double-play count. Ties should be included if present."
+
+  - key: 78
+    question: "Which regular-season innings had the most total runs scored?"
+    answer: "Return the inning number or inning numbers with the highest total runs scored across regular-season games. Include inning number and total runs scored, and include ties if present."
+
+  - key: 79
+    question: "What was the average number of runs scored per inning number during the regular season?"
+    answer: "Return inning numbers with the average runs scored per distinct regular-season game-inning. Total runs per inning may be included as a supporting column but is not required."
+
+  - key: 80
+    question: "Which teams scored the most runs in the first inning during the regular season?"
+    answer: "Return batting teams with first-inning runs, ordered descending."
+
+  - key: 81
+    question: "Which teams scored the most runs after the seventh inning during the regular season?"
+    answer: "Return batting teams with runs scored in innings eight and later."
+
+  - key: 82
+    question: "Which regular-season games had the most lead changes based on running scores?"
+    answer: "Return games with estimated lead-change counts from event-level running scores."
+
+  - key: 83
+    question: "Which regular-season games had the most scoreless innings?"
+    answer: "Return games with counts of innings where neither team scored."
+
+  - key: 84
+    question: "How many regular-season games ended with the home team winning versus the away team winning?"
+    answer: "Return counts of regular-season games won by the home team versus won by the away team. Accept either category rows or a single row with separate home_team_wins and away_team_wins columns."
+
+  - key: 85
+    question: "Which regular-season teams had the best winning percentage in games with attendance above 40000?"
+    answer: "Return the team or teams with the best winning percentage in regular-season games with attendance above 40000. Include wins, games played, and winning percentage, and include ties if present."
+
+  - key: 86
+    question: "Which regular-season teams had the best winning percentage in day games?"
+    answer: "Return teams with wins, games, and winning percentage for day games."
+
+  - key: 87
+    question: "Which regular-season teams had the best winning percentage in night games?"
+    answer: "Return teams with wins, games, and winning percentage for night games."
+
+  - key: 88
+    question: "Which team matchups occurred most often during the 2016 regular season?"
+    answer: "Return home-away team pairings with game counts, ordered descending."
+
+  - key: 89
+    question: "Which team matchups had the highest average combined score during the regular season?"
+    answer: "Return the team matchup or matchups with the highest average combined final score during the regular season. Include the teams, games played, and average combined score, and include ties if present."
+
+  - key: 90
+    question: "Which regular-season games between the Cubs and Cardinals had the highest combined score?"
+    answer: "Return the Cubs-Cardinals regular-season game or games with the highest combined final score. Include teams, final scores, combined score, and enough game identity such as gameId or date/start time. Include ties if present."
+
+  - key: 91
+    question: "What was the Cubs regular-season win-loss record in 2016?"
+    answer: "Return wins and losses for the Cubs using both home and away games."
+
+  - key: 92
+    question: "What was the Red Sox regular-season run differential in 2016?"
+    answer: "Return Red Sox runs scored, runs allowed, and run differential."
+
+  - key: 93
+    question: "How many Yankees regular-season games were decided by one run?"
+    answer: "Return a count of Yankees games where final margin equals one."
+
+  - key: 94
+    question: "Which teams did the Dodgers beat most often during the regular season?"
+    answer: "Return opponent teams with Dodgers wins, ordered descending."
+
+  - key: 95
+    question: "Which teams beat the Dodgers most often during the regular season?"
+    answer: "Return opponent teams with wins over the Dodgers, ordered descending."
+
+  - key: 96
+    question: "What was the postseason record for each team in the dataset?"
+    answer: "Return postseason teams with wins and losses from game-level final scores."
+
+  - key: 97
+    question: "Which postseason hitters had the most hits?"
+    answer: "Return postseason hitter names or IDs with hit counts, ordered descending."
+
+  - key: 98
+    question: "Which postseason pitchers recorded the most strikeouts?"
+    answer: "Return postseason pitcher names or IDs with strikeout counts, ordered descending."
+
+  - key: 99
+    question: "Which postseason games had the highest attendance?"
+    answer: "Accept the postseason game or games tied for maximum attendance. The result should include teams, venue, and attendance, with useful game identity such as gameId, date, or startTime. Returning only the top tied game(s), rather than every postseason game ordered descending, is acceptable."
+
+  - key: 100
+    question: "What was the average postseason game duration in minutes by venue?"
+    answer: "Return postseason venues with average duration minutes."
